@@ -5,11 +5,16 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* Sections
@@ -339,5 +344,143 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+/*
+font-family: 'Ubuntu', sans-serif;
+font-family: 'JetBrains Mono', monospace;
+font-family: 'Lora', serif;
+*/
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  color: #2e2c2c;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, button {
+  font-family: "Ubuntu", sans-serif;
+  color: black;
+}
+
+section {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  min-height: 100vh;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+button {
+  border: 1px solid rgba(0, 53, 153, 0.85);
+  cursor: pointer;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.first {
+  width: 100%;
+  height: 100vh;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(/img/main.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/main.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.first .first-content {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-align: center;
+  width: 90%;
+}
+
+.first .first-content .main-title {
+  font-family: "JetBrains Mono", monospace;
+  color: wheat;
+  font-size: 6rem;
+  font-weight: 100;
+  letter-spacing: 1.5rem;
+}
+
+.first .first-content .main-slogan {
+  color: #04b5e5;
+  letter-spacing: 1.6rem;
+}
+
+.iconcoloryt {
+  color: red;
+}
+
+.iconcoloryt:hover {
+  color: #ac0909;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.iconcolorfb {
+  color: #4267B2;
+}
+
+.iconcolorfb:hover {
+  color: #334e86;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.iconcolortw {
+  color: #1DA1F2;
+}
+
+.iconcolortw:hover {
+  color: #0084b4;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.iconcolorgh {
+  color: #333;
+}
+
+.iconcolorgh:hover {
+  color: #4078c0;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.iconcolorli {
+  color: #0072b1;
+}
+
+.iconcolorli:hover {
+  color: #074d74;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 /*# sourceMappingURL=main.css.map */
