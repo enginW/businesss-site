@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FANCYBOX CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <script src="https://kit.fontawesome.com/c9b8b9278c.js" crossorigin="anonymous"></script>
     <title>Business Website</title>
     <link rel="stylesheet" href="style/main.css">
 </head>
-
 <body>
     <!--FIRST SECTION-->
     <section class="first">
         <div class="container">
             <div class="first-content">
-                <h1 class="main-title">BUSINESS</h1>
-                <p class="main-slogan">This Business Website</p>
+                <h1 class="main-title ani-delay">BUSINESS</h1>
+                <p class="main-slogan ani-delay1">This Business Website</p>
                 <div class="arrow">
                     <a href="#">
                         <span></span>
@@ -70,7 +70,7 @@
             <div class="about-content section-grid">
                 <div class="about-info">
                     <h2 class="vertical-title">The Story</h2>
-                    <div class="about-detail">
+                    <div class="about-detail ani-left">
                         <h2 class="horizontal-title">Our Mission</h2>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum natus quae reiciendis
                             distinctio, fugiat neque fugit nihil vel rerum unde vitae quam officia odit! Laboriosam in
@@ -95,7 +95,7 @@
                 </div>
                 <div class="services-info">
                     <h2 class="vertical-title vertical-title-right">The Skills</h2>
-                    <div class="services-detail">
+                    <div class="services-detail ani-right">
                         <div class="services-slider">
                             <div class="services-slide services-slide-1">
                                 <h2 class="horizontal-title">Our Service 1</h2>
@@ -123,14 +123,14 @@
 
     <section class="portfolio">
         <div class="portfolio-items">
-            <a href="/img/portfolio1.jpg" class="portfolio-item portfolio-item-1"><span>&#9741;</span></a>
-            <a href="/img/portfolio2.jpg" class="portfolio-item portfolio-item-2"><span>&#9741;</span></a>
-            <a href="/img/portfolio3.jpg" class="portfolio-item portfolio-item-3"><span>&#9741;</span></a>
-            <a href="/img/portfolio4.jpg" class="portfolio-item portfolio-item-4"><span>&#9741;</span></a>
-            <a href="/img/portfolio5.jpg" class="portfolio-item portfolio-item-5"><span>&#9741;</span></a>
-            <a href="/img/portfolio6.jpg" class="portfolio-item portfolio-item-6"><span>&#9741;</span></a>
-            <a href="/img/portfolio7.jpg" class="portfolio-item portfolio-item-7"><span>&#9741;</span></a>
-            <a href="/img/portfolio8.jpg" class="portfolio-item portfolio-item-8"><span>&#9741;</span></a>
+            <a href="/img/portfolio1.jpg" data-fancybox="gallery" class="portfolio-item portfolio-item-1"><span>&#9741;</span></a>
+            <a href="/img/portfolio2.jpg" data-fancybox="gallery" class="portfolio-item portfolio-item-2"><span>&#9741;</span></a>
+            <a href="/img/portfolio3.jpg" data-fancybox="gallery" class="portfolio-item portfolio-item-3"><span>&#9741;</span></a>
+            <a href="/img/portfolio4.jpg" data-fancybox="gallery" class="portfolio-item portfolio-item-4"><span>&#9741;</span></a>
+            <a href="/img/portfolio5.jpg" data-fancybox="gallery" class="portfolio-item portfolio-item-5"><span>&#9741;</span></a>
+            <a href="/img/portfolio6.jpg" data-fancybox="gallery" class="portfolio-item portfolio-item-6"><span>&#9741;</span></a>
+            <a href="/img/portfolio7.jpg" data-fancybox="gallery" class="portfolio-item portfolio-item-7"><span>&#9741;</span></a>
+            <a href="/img/portfolio8.jpg" data-fancybox="gallery" class="portfolio-item portfolio-item-8"><span>&#9741;</span></a>
         </div>
     </section>
 
@@ -141,7 +141,7 @@
             <div class="team-content section-grid">
                 <div class="team-info">
                     <h2 class="vertical-title">The Team</h2>
-                    <div class="team-detail">
+                    <div class="team-detail ani-left">
                         <h2 class="horizontal-title">Our Personal</h2>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum natus quae reiciendis
                             distinctio, fugiat neque fugit nihil vel rerum unde vitae quam officia odit! Laboriosam in
@@ -188,7 +188,7 @@
     <section class="blog">
         <div class="container">
             <div class="blog-content section-grid">
-                <div class="latest-post">
+                <div class="latest-post ani-leftt">
                     <div class="blog-post">
                         <h4>Post Title-1</h4>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, iusto inventore? Ipsum
@@ -202,7 +202,7 @@
                             <p class="da">December 21, 2020</p>
                         </div>
                     </div>
-                    <div class="blog-post">
+                    <div class="blog-post ">
                         <h4>Post Title-2</h4>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, iusto inventore? Ipsum
                             recusandae quos odit.</p>
@@ -216,7 +216,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="blog-info">
+                <div class="blog-info ani-right">
                     <h2 class="vertical-title vertical-title-right">The Blog</h2>
                     <div class="team-detail">
                         <h2 class="horizontal-title">From US</h2>
@@ -263,6 +263,15 @@
             </div>
         </div>
     </footer>
+    <!--JQUERY-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <!--FANCYBOX JS-->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!--SCROLLREVEAL JS-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--CUSTOM JS-->
+    <script src="js/main.js"></script>
 </body>
+
 
 </html>
