@@ -120,6 +120,16 @@ img{
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+    &::after,&::before{
+        content:"";
+        position:absolute;
+        height: 100px;
+        bottom: -70px;
+        right:0;
+        left:0;
+        background-color: $secondarycolor;
+        transform:skewY(-2deg);
+        }
     .first-content{
         position: absolute;
         top: 40%;
@@ -229,6 +239,17 @@ img{
     }
 }
 .about{
+    position: relative;
+    &::after,&::before{
+        content:"";
+        position:absolute;
+        height: 100px;
+        bottom: -70px;
+        right:0;
+        left:0;
+        background-color: $secondarycolor;
+        transform:skewY(2deg);
+        }
     .about-content{
         .about-info{
             margin-left: 3rem;
@@ -237,6 +258,17 @@ img{
 }
 .services{
     background-color: $secondarycolor;
+    position: relative;
+    &::after,&::before{
+        content:"";
+        position:absolute;
+        height: 100px;
+        bottom: -70px;
+        right:0;
+        left:0;
+        background-color: white;
+        transform:skewY(-2deg);
+        }
     .services-content{
         .services-image img{
             border-radius: 20px;
@@ -644,6 +676,13 @@ footer{
     }
 }
 
+//MEDİAQUERY
+
+@media only screed and (max-width: 992px){
+    .navbar-toggle{
+        display: block;
+    }
+}
 
 
 

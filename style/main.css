@@ -491,6 +491,18 @@ img {
   position: relative;
 }
 
+.first::after, .first::before {
+  content: "";
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background-color: #04b5e5;
+  -webkit-transform: skewY(-2deg);
+          transform: skewY(-2deg);
+}
+
 .first .first-content {
   position: absolute;
   top: 40%;
@@ -633,12 +645,41 @@ img {
   transition: 600ms;
 }
 
+.about {
+  position: relative;
+}
+
+.about::after, .about::before {
+  content: "";
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background-color: #04b5e5;
+  -webkit-transform: skewY(2deg);
+          transform: skewY(2deg);
+}
+
 .about .about-content .about-info {
   margin-left: 3rem;
 }
 
 .services {
   background-color: #04b5e5;
+  position: relative;
+}
+
+.services::after, .services::before {
+  content: "";
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background-color: white;
+  -webkit-transform: skewY(-2deg);
+          transform: skewY(-2deg);
 }
 
 .services .services-content .services-image img {
@@ -1213,6 +1254,12 @@ footer .social-icon .social-list li i {
     opacity: 0;
     -webkit-transform: rotate(45deg) translate(-20px, -20px);
             transform: rotate(45deg) translate(-20px, -20px);
+  }
+}
+
+@media only screed and (max-width: 992px) {
+  .navbar-toggle {
+    display: block;
   }
 }
 /*# sourceMappingURL=main.css.map */
